@@ -20,6 +20,7 @@ img{
     height: 180px;
     border-radius: 90px;
     margin-top: 35px;
+    box-shadow: 4px 4px 5px #E59866;
 }
 
 /* Profile cover formatting */
@@ -36,7 +37,7 @@ img{
 .profile-cover h1{
     margin: 10px 0 0 0;
     font-size: 35px;
-    text-shadow: 2px 1px #E59866;
+    text-shadow: 2px 2px 5px #E59866;
 }
     /* Removes the space bewteen the paragraph elements
     with the profile cover */
