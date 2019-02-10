@@ -11,8 +11,8 @@ body {
     display: block;
     width: 500px;
     height: 600px;
-    /* border: 2px solid #99A3A4;
-    border-radius: 20px; */
+    box-shadow: -1px 0 #A7AAAA, 0 1px #A7AAAA, 1px 0 #A7AAAA, 0 -1px #A7AAAA;
+    border-radius: 20px;
 }
 
 /* Profile picture */
@@ -50,10 +50,15 @@ img{
     margin: 0;
     grid-row: 3 / span 1;
     grid-column: 2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 250px;
+    color: #999B9B;
 }
     /*Displays the paragraph in block format */
 .profile-description p{
-    padding-top: 10px;
+    padding: 10px 60px 0;
+    text-align: justify;
 }
 
 /* Display the posts, following and follower information */
@@ -72,6 +77,7 @@ li {
 /* The posts, following and followers values */
 span li{
     padding: 0 40px 0 40px;
+    color: #2C2D2D;
     font-weight: bold;
 }
     /* Places the following list elements in new line */
@@ -82,7 +88,7 @@ span::after{
 
 /* Follow button for the profile */
 button{
-    margin: 15px 0 15px 0;
+    margin: 20px 0 20px 0;
     border-radius: 5px;
     width: 130px;
     height: 30px;
