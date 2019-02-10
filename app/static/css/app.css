@@ -2,6 +2,7 @@ body {
     padding-top: 5rem;
 }
 
+/* Container holding the profile */
 #profile-box{
     margin: 0 auto;
     display: grid;
@@ -14,12 +15,14 @@ body {
     border-radius: 20px; */
 }
 
+/* Profile picture */
 img{
     height: 180px;
     border-radius: 90px;
     margin-top: 35px;
 }
 
+/* Profile cover formatting */
 .profile-cover{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -27,19 +30,64 @@ img{
     grid-column: 2;
     background-color: #F0B27A;
     height: 350px;
+    color: #fff;
 }
 
 .profile-cover h1{
     margin: 10px 0 0 0;
     font-size: 35px;
+    text-shadow: 2px 1px #E59866;
 }
-
+    /* Removes the space bewteen the paragraph elements
+    with the profile cover */
 .profile-cover p{
     margin: 0;
 }
 
+/* Description for the profile */
 .profile-description{
     margin: 0;
     grid-row: 3 / span 1;
     grid-column: 2;
+}
+    /*Displays the paragraph in block format */
+.profile-description p{
+    padding-top: 10px;
+}
+
+/* Display the posts, following and follower information */
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    margin-left: 2px;
+}
+
+/* The posts, following and followers values */
+span li{
+    padding: 0 40px 0 40px;
+    font-weight: bold;
+}
+    /* Places the following list elements in new line */
+span::after{
+    content: '\A';
+    white-space: pre;
+}
+
+/* Follow button for the profile */
+button{
+    margin: 15px 0 15px 0;
+    border-radius: 5px;
+    width: 130px;
+    height: 30px;
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    background-color: #F9C09B;
+    border: none;
 }
